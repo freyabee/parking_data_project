@@ -1,0 +1,7 @@
+applications:
+  - name: geopark
+    buildpack: python_buildpack
+    memory: 50MB
+    host: geopark
+    domain: apps.eu1.mindsphere.io
+    command: python app.py
