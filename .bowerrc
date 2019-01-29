@@ -1,3 +1,5 @@
 {
-  "directory": "static/bower_components"
+  "directory": "static/bower_components",
+  "proxy": "http://194.138.0.3:9400",
+  "https-proxy":"http://194.138.0.3:9400"
 }
