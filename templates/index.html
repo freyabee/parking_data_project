@@ -5,15 +5,17 @@
   <!--mapbox stylesheet-->
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <script src="../static/lib/leaflet-heat.js"></script>
+
   <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
- <title>Flask Boilerplate</title>
+ <title>Geoparking App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href={{ url_for('static', filename='main.css') }} rel="stylesheet" media="screen">
 </head>
 
 <body>
   <div class="container">
-    <h1>Hello, world!</h1>
+    <h2>Heatmap</h2>
   </div>
   <div id="map"></div>
 
