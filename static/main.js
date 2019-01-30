@@ -17,7 +17,7 @@ var myStyle = {
 };
 
 // Add the style to your layer    
-var geoj = new L.GeoJSON.AJAX("./map1.geojson",{
+var geoj = new L.GeoJSON.AJAX("./data/carpakrmap.json",{
 	 style:myStyle});
 console.log(geoj)
 
