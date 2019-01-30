@@ -9,7 +9,7 @@ from folium import plugins
 from folium.plugins import HeatMap
 
 def initmap():
-    df = pd.read_csv('data/14_data.csv', sep=',')
+    df = pd.read_csv('data/locations.csv', sep=',')
     df.head()
 
     df['Occupancy Percentage'] = pd.to_numeric(df['Occupancy Percentage'], errors='coerce')
@@ -28,7 +28,8 @@ def initmap():
     parking = folium.Map(location=[50.7260218,-1.8827525], zoom_start = 13, tiles="CartoDB dark_matter")
     hm = plugins.HeatMapWithTime(list_data, index=[date for date in unique], auto_play=False,radius=40, max_opacity=0.8)
     parking.add_child(hm)
-    map.save(outfile='templates/map.html')
+
+    parking.save(outfile='templates/map.html')
 
 
 
