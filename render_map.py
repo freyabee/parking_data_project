@@ -41,4 +41,5 @@ def initmap():
         json14,
         name='geojson').add_to(parking)
     folium.LayerControl().add_to(parking)
+
     parking.save(outfile='templates/map.html')
